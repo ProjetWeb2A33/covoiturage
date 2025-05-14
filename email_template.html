@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation de commande - EasyParki</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #fff;
+            max-width: 600px;
+            width: 100%;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .details {
+            text-align: left;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .details strong {
+            color: #2c3e50;
+            display: inline-block;
+            width: 120px;
+        }
+
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        .logo {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .details strong {
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Optional Logo -->
+        <img src="https://via.placeholder.com/100x50?text=EasyParki" alt="EasyParki Logo" class="logo">
+        
+        <h1>Confirmation de commande - EasyParki</h1>
+        <p>Bonjour <span class="highlight">[Client Name]</span>,</p>
+        <p>Votre commande n°<span class="highlight">[Order ID]</span> a été enregistrée avec succès.</p>
+        
+        <div class="details">
+            <p><strong>Service :</strong> [Service Name]</p>
+            <p><strong>Date de commande :</strong> [Order Date]</p>
+            <p><strong>Station :</strong> [Station Name]</p>
+            <p><strong>Montant :</strong> [Amount] TND</p>
+        </div>
+        
+        <p class="footer">Merci d'utiliser EasyParki !</p>
+    </div>
+</body>
+</html>

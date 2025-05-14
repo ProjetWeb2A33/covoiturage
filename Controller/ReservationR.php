@@ -185,7 +185,7 @@ class ReservationR {
             return null;
         }
     }
-    private function calculateParkingScore($parking) {
+    public function calculateParkingScore($parking) {
         // Poids configurables
         $weights = [
             'disponibilite' => 0.4,
